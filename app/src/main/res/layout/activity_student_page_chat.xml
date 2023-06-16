@@ -1,0 +1,148 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".StudentPageChat">
+
+    <ScrollView android:id="@+id/student_page_chat"
+        android:layout_width="wrap_content"
+        android:layout_height="match_parent" >
+
+        <RelativeLayout android:id="@+id/content_container"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content" >
+
+
+
+            <RelativeLayout android:id="@+id/page_student_page_chat_ek1"
+                android:layout_marginTop="0dp"
+                android:layout_marginStart="0dp"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                >
+
+                <View   android:id="@+id/_bg__student_page_chat_ek2"
+                    android:background="@drawable/_bg__student_page_chat_ek2_shape"
+                    android:layout_marginStart="0dp"
+                    android:layout_marginTop="0dp"
+                    android:layout_width="390dp"
+                    android:layout_height="844dp" />
+
+                <View   android:id="@+id/rectangle_14"
+                    android:background="@drawable/rectangle_14_shape"
+                    android:layout_marginStart="0dp"
+                    android:layout_marginTop="0dp"
+                    android:layout_width="390dp"
+                    android:layout_height="133dp" />
+
+                <View   android:id="@+id/ellipse_4"
+                    android:background="@drawable/ellipse_4_shape"
+                    android:layout_marginStart="63dp"
+                    android:layout_marginTop="61dp"
+                    android:layout_width="60dp"
+                    android:layout_height="60dp" />
+
+                <ImageView android:id="@+id/vector"
+                    android:src="@drawable/vector"
+                    android:contentDescription="@string/vectorb"
+                    android:layout_marginStart="21dp"
+                    android:layout_marginTop="75dp"
+                    android:layout_width="17.43dp"
+                    android:layout_height="27dp" />
+
+                <TextView android:id="@+id/student_b"
+                    android:textStyle="bold"
+                    android:textSize="20sp"
+                    android:textColor="@color/ellipse_4_color"
+                    android:layout_marginStart="136dp"
+                    android:layout_marginTop="75dp"
+                    android:layout_width="125dp"
+                    android:layout_height="44dp"
+                    android:text="@string/student_b_string"
+                    />
+
+                <ImageView android:id="@+id/vector_ek1"
+                    android:src="@drawable/vector_ek1"
+                    android:contentDescription="@string/vector_ek1m"
+                    android:layout_marginStart="340dp"
+                    android:layout_marginTop="91dp"
+                    android:layout_width="24.22dp"
+                    android:layout_height="7.03dp" />
+
+                <View   android:id="@+id/rectangle_30"
+                    android:background="@drawable/rectangle_30_shape"
+                    android:layout_marginStart="20dp"
+                    android:layout_marginTop="171dp"
+                    android:layout_width="293dp"
+                    android:layout_height="73dp" />
+
+                <View   android:id="@+id/rectangle_31"
+                    android:background="@drawable/rectangle_31_shape"
+                    android:layout_marginStart="20dp"
+                    android:layout_marginTop="254dp"
+                    android:layout_width="191dp"
+                    android:layout_height="31dp" />
+
+                <View   android:id="@+id/rectangle_32"
+                    android:background="@drawable/rectangle_32_shape"
+                    android:layout_marginStart="136dp"
+                    android:layout_marginTop="315dp"
+                    android:layout_width="234dp"
+                    android:layout_height="66dp" />
+
+                <View   android:id="@+id/rectangle_33"
+                    android:background="@drawable/rectangle_33_shape"
+                    android:layout_marginStart="63dp"
+                    android:layout_marginTop="391dp"
+                    android:layout_width="307dp"
+                    android:layout_height="79dp" />
+
+                <View   android:id="@+id/rectangle_34"
+                    android:background="@drawable/rectangle_34_shape"
+                    android:alpha="0.9"
+                    android:layout_marginStart="195dp"
+                    android:layout_marginTop="480dp"
+                    android:layout_width="175dp"
+                    android:layout_height="40dp" />
+
+                <View   android:id="@+id/rectangle_35"
+                    android:background="@drawable/rectangle_35_shape"
+                    android:layout_marginStart="17dp"
+                    android:layout_marginTop="766dp"
+                    android:layout_width="315dp"
+                    android:layout_height="40dp" />
+
+                <ImageView android:id="@+id/vector_ek2"
+                    android:src="@drawable/vector_ek2"
+                    android:contentDescription="@string/vector_ek2b"
+                    android:layout_marginStart="344dp"
+                    android:layout_marginTop="771dp"
+                    android:layout_width="30dp"
+                    android:layout_height="30dp" />
+
+                <ImageView android:id="@+id/vector_ek3"
+                    android:src="@drawable/vector_ek3"
+                    android:contentDescription="@string/vector_ek3v"
+                    android:layout_marginStart="31dp"
+                    android:layout_marginTop="776dp"
+                    android:layout_width="20dp"
+                    android:layout_height="20dp" />
+
+                <TextView android:id="@+id/send_a_message___"
+                    android:textSize="12sp"
+                    android:textColor="@color/ellipse_4_color"
+                    android:layout_marginStart="70dp"
+                    android:layout_marginTop="777dp"
+                    android:layout_width="141dp"
+                    android:layout_height="26dp"
+                    android:text="@string/send_a_message____string"
+                    />
+
+            </RelativeLayout>
+        </RelativeLayout>
+
+    </ScrollView>
+
+</RelativeLayout>

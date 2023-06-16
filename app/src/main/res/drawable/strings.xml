@@ -1,0 +1,16 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+	<!-- student_search_success strings -->
+
+	<string name="app_name">Page 1</string>
+	<string name="ek_img_content">ExportKit Image</string>
+	<string name="how_to_center_div_string">How to center Div</string>
+	<string name="mentor_string">Mentor</string>
+	<string name="description_string">Description</string>
+	<string name="mentor_ek1_string">Mentor</string>
+	<string name="description_ek1_string">Description</string>
+	<string name="mentor_ek2_string">Mentor</string>
+	<string name="description_ek2_string">Description</string>
+	<string name="mentor_ek3_string">Mentor</string>
+	<string name="description_ek3_string">Description</string>
+</resources>
