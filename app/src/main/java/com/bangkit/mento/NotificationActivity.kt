@@ -1,12 +1,15 @@
 package com.kelompokcool.bangkitcapstone
 
+import android.app.DownloadManager
 import android.content.Intent
 import android.os.Bundle
 import android.view.*
 import android.widget.Toast
 import androidx.appcompat.app.AppCompatActivity
+import androidx.compose.foundation.layout.Direction
 import androidx.recyclerview.widget.LinearLayoutManager
 import androidx.recyclerview.widget.RecyclerView
+import com.bangkit.mento.R
 import com.firebase.ui.firestore.FirestoreRecyclerAdapter
 import com.firebase.ui.firestore.FirestoreRecyclerOptions
 import com.google.firebase.firestore.FieldValue
@@ -20,7 +23,7 @@ import kotlinx.android.synthetic.main.toolbar_main.*
 import java.text.SimpleDateFormat
 import java.util.*
 
-class NotificationActivity : AppCompatActivity() {
+class Notificat/ionActivity : AppCompatActivity() {
 
     private lateinit var adapter: NotificationsAdapter
 
@@ -30,7 +33,7 @@ class NotificationActivity : AppCompatActivity() {
 
         val notificationsQuery = rootDB.collection("notifications")
             .orderBy("following")
-            .orderBy("time", Query.Direction.DESCENDING)
+            .orderBy("time", DownloadManager.Query.Direction.DESCENDING)
             .whereEqualTo("userId", authDb.currentUser!!.uid)
             .whereNotEqualTo("following", true)
 

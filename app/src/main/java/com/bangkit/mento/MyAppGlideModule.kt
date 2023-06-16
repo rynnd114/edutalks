@@ -1,6 +1,7 @@
 package com.kelompokcool.bangkitcapstone
 
 import android.content.Context
+import androidx.constraintlayout.core.state.Registry
 import com.bumptech.glide.Glide
 import com.bumptech.glide.Registry
 import com.bumptech.glide.annotation.GlideModule
