@@ -158,4 +158,7 @@
     <string name="language_string">Language</string>
     <string name="balance_string">Balance</string>
     <string name="setting_string">Setting</string>
+    <string name="chat_send">Send</string>
+    <string name="emailNameHint">E-mail</string>
+
 </resources>

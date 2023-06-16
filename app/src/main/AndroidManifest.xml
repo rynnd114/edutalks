@@ -12,6 +12,21 @@
         android:theme="@style/Theme.Mento"
         tools:targetApi="31">
         <activity
+            android:name=".HomeChatActivity"
+            android:exported="false" />
+        <activity
+            android:name=".HomeActivity"
+            android:exported="false" />
+        <activity
+            android:name=".GetPasswordActivity"
+            android:exported="false" />
+        <activity
+            android:name=".CommentActivity"
+            android:exported="false" />
+        <activity
+            android:name=".ChatActivity"
+            android:exported="false" />
+        <activity
             android:name=".StudentProfileSettings"
             android:exported="false" />
         <activity

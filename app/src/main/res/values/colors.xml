@@ -45,4 +45,15 @@
     <color name="_bg__student_profile_setting_ek2_color">#F2F2F2</color>
     <color name="rectangle_24_color">#161E30</color>
     <color name="account_color">#D9D9D9</color>
+    <color name="background_green">#75d69c</color>
+    <color name="dark_green">#237745</color>
+    <color name="dark_blue">#008080</color>
+    <color name="menu_bar">#31a55f </color>
+    <color name="yellow">#FFD700 </color>
+    <color name="red">#FF0000</color>
+    <color name="dark_black">#1a1a20</color>
+    <color name="kinda_dark_black">#161e30</color>
+    <color name="dark_gray">#656e74</color>
+    <color name="light_bluey">#abbdd2</color>
+    <color name="pale_yellow">#f2e0cb</color>
 </resources>
