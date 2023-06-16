@@ -1,0 +1,148 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:id="@+id/constrainLayout"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@color/dark_gray"
+    android:orientation="vertical"
+    tools:context=".ProfileActivity">
+
+    <ImageView
+        android:id="@+id/logo"
+        android:layout_width="match_parent"
+        android:layout_height="@dimen/d_80"
+        android:src="@drawable/edutalk_logo"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintTop_toTopOf="parent"
+        android:background="@color/white"
+        tools:ignore="ContentDescription" />
+
+    <include
+        android:id="@+id/menuBarHome"
+        layout="@layout/toolbar_main"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        app:layout_constraintTop_toBottomOf="@id/logo"
+        android:backgroundTintMode="src_in" />
+
+    <ScrollView
+        android:layout_width="match_parent"
+        android:fillViewport="true"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintTop_toBottomOf="@id/menuBarHome"
+        android:layout_height="0dp">
+
+        <LinearLayout
+            android:id="@+id/LinearLayout_home_body"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:gravity="center_horizontal"
+            android:orientation="vertical">
+
+            <de.hdodenhof.circleimageview.CircleImageView
+                android:id="@+id/imageView_profile_picture"
+                android:layout_width="@dimen/d_250"
+                android:layout_height="@dimen/d_250"
+                android:layout_marginTop="@dimen/d_10"
+                android:background="@drawable/photo_frame_profile" />
+
+            <TextView
+                android:id="@+id/TextView_username"
+                android:layout_width="@dimen/d_300"
+                android:layout_height="@dimen/d_30"
+                android:background="@drawable/text_frame_profile"
+                android:hint="@string/username1"
+                android:textColor="@color/pale_yellow"
+                android:textAlignment="center"
+                android:gravity="center"
+                android:textSize="@dimen/f_20"
+                android:layout_marginTop="@dimen/d_20" />
+
+            <TextView
+                android:id="@+id/TextView_fullname"
+                android:layout_width="@dimen/d_300"
+                android:layout_height="@dimen/d_30"
+                android:background="@drawable/text_frame_profile"
+                android:hint="@string/fullName"
+                android:textAlignment="center"
+                android:gravity="center"
+                android:textSize="@dimen/f_20"
+                android:layout_marginTop="@dimen/d_20"/>
+
+            <TextView
+                android:id="@+id/TextView_email"
+                android:layout_width="@dimen/d_300"
+                android:layout_height="@dimen/d_30"
+                android:background="@drawable/text_frame_profile"
+                android:hint="@string/username"
+                android:textAlignment="center"
+                android:gravity="center"
+                android:textSize="@dimen/f_20"
+                android:layout_marginTop="@dimen/d_20"/>
+
+            <TextView
+                android:id="@+id/TextView_birthday"
+                android:layout_width="@dimen/d_300"
+                android:layout_height="@dimen/d_30"
+                android:background="@drawable/text_frame_profile"
+                android:hint="@string/birthday"
+                android:textAlignment="center"
+                android:gravity="center"
+                android:textSize="@dimen/f_20"
+                android:layout_marginTop="@dimen/d_20"/>
+
+            <CheckBox
+                android:id="@+id/checkBoxFollowListIsVisible"
+                android:layout_width="@dimen/d_300"
+                android:layout_height="@dimen/d_30"
+                android:background="@drawable/text_frame_profile"
+                android:text="@string/followListIsVisible"
+                android:textAlignment="center"
+                android:gravity="center"
+                android:textSize="@dimen/f_20"
+                android:layout_marginTop="@dimen/d_20"
+                android:enabled="false"/>
+
+            <CheckBox
+                android:id="@+id/checkBoxPrivate"
+                android:layout_width="@dimen/d_300"
+                android:layout_height="@dimen/d_30"
+                android:background="@drawable/text_frame_profile"
+                android:text="@string/privateProfile"
+                android:textAlignment="center"
+                android:gravity="center"
+                android:textSize="@dimen/f_20"
+                android:layout_marginTop="@dimen/d_20"
+                android:enabled="false"/>
+
+            <Button
+                android:id="@+id/Button_updateProfile"
+                android:layout_width="@dimen/d_180"
+                android:layout_height="@dimen/d_40"
+                android:layout_marginTop="@dimen/d_40"
+                android:background="@drawable/button_login"
+                android:fontFamily="sans-serif-medium"
+                android:text="@string/updateProfile"
+                android:textColor="@color/white"
+                android:textSize="@dimen/f_20"/>
+
+            <Button
+                android:id="@+id/Button_updateSecurity"
+                android:layout_width="@dimen/d_200"
+                android:layout_height="@dimen/d_40"
+                android:layout_marginTop="@dimen/d_20"
+                android:background="@drawable/button_login"
+                android:fontFamily="sans-serif-medium"
+                android:text="@string/updateSecurity"
+                android:textColor="@color/white"
+                android:textSize="@dimen/f_20"
+                app:layout_constraintEnd_toEndOf="parent"
+                app:layout_constraintStart_toStartOf="parent"
+                app:layout_constraintTop_toBottomOf="@+id/Button_updateProfile"
+                android:layout_marginBottom="@dimen/d_40"/>
+        </LinearLayout>
+    </ScrollView>
+</androidx.constraintlayout.widget.ConstraintLayout>
